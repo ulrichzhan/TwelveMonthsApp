@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">📆 Application Douze Mois</string>
+    <string name="take_photo">Prendre une photo</string>
+    <string name="month_selected">Mois sélectionné : %1$s</string>
+    <string name="photo_saved">Photo enregistrée pour %1$s</string>
+    <string name="photo_failed">Échec de la photo : %1$s</string>
+    <string name="location_unavailable">Localisation non disponible</string>
+    <string name="location_permission_denied">Localisation Permission refusée</string>
+    <string name="camera_permission_denied">Caméra Permission refusée</string>
+    <string name="address_found">📍 %1$s</string>
+    <string name="address_not_found">Adresse introuvable</string>
+    <string name="geocoder_error">Erreur de géolocalisation</string>
+
+    <string name="january">Janvier</string>
+    <string name="february">Février</string>
+    <string name="march">Mars</string>
+    <string name="april">Avril</string>
+    <string name="may">Mai</string>
+    <string name="june">Juin</string>
+    <string name="july">Juillet</string>
+    <string name="august">Août</string>
+    <string name="september">Septembre</string>
+    <string name="october">Octobre</string>
+    <string name="november">Novembre</string>
+    <string name="december">Décembre</string>
+    <string name="month_unknown">Inconnu</string>
+
+    <string name="test_camera">Testez la caméra</string>
+
+    <string name="location_title">Localisation sur la carte</string>
+
+    <string name="next_city_title">Prochaine destination</string>
+    <string name="next_city_text">📍 %1$s</string>
+    <string name="default_city_text">Ta nouvelle destination…</string>
+    <string name="next_city_button">Obtenir la prochaine destination</string>
+    <string name="no_city_found">Aucune ville trouvé !</string>
+    <string name="error_fetching_data">Erreur de liaison des données. Regardez les logs.</string>
+
+</resources>

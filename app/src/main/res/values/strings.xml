@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">📆 Twelve Months App</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="month_selected">Month selected : %1$s</string>
+    <string name="photo_saved">Photo saved for %1$s</string>
+    <string name="photo_failed">Photo failed: %1$s</string>
+    <string name="location_unavailable">Location unavailable</string>
+    <string name="location_permission_denied">Location Permission denied</string>
+    <string name="camera_permission_denied">Camera Permission denied</string>
+    <string name="address_found">📍 %1$s</string>
+    <string name="address_not_found">Address not found</string>
+    <string name="geocoder_error">Geocoder error</string>
+
+    <string name="january">January</string>
+    <string name="february">February</string>
+    <string name="march">March</string>
+    <string name="april">April</string>
+    <string name="may">May</string>
+    <string name="june">June</string>
+    <string name="july">July</string>
+    <string name="august">August</string>
+    <string name="september">September</string>
+    <string name="october">October</string>
+    <string name="november">November</string>
+    <string name="december">December</string>
+    <string name="month_unknown">Unknown</string>
+
+    <string name="test_camera">Test Camera</string>
+
+    <string name="location_title">Location on Google Maps</string>
+
+    <string name="next_city_title">Next destination</string>
+    <string name="next_city_text">📍 %1$s</string>
+    <string name="next_city_button">Get your next destination</string>
+
+    <string name="no_city_found">No cities found!</string>
+    <string name="error_fetching_data">Error fetching data. Check logs.</string>
+    <string name="default_city_text">Select a destination…</string>
+
+</resources>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/button_january"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/january"
+            android:onClick="onMonthClick"
+            android:tag="january"/>
+
+        <Button
+            android:id="@+id/button_february"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/february"
+            android:onClick="onMonthClick"
+            android:tag="february"/>
+
+        <Button
+            android:id="@+id/button_march"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/march"
+            android:onClick="onMonthClick"
+            android:tag="march"/>
+
+        <Button
+            android:id="@+id/button_april"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/april"
+            android:onClick="onMonthClick"
+            android:tag="april"/>
+
+        <Button
+            android:id="@+id/button_may"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/may"
+            android:onClick="onMonthClick"
+            android:tag="may"/>
+
+        <Button
+            android:id="@+id/button_june"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/june"
+            android:onClick="onMonthClick"
+            android:tag="june"/>
+
+        <Button
+            android:id="@+id/button_july"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/july"
+            android:onClick="onMonthClick"
+            android:tag="july"/>
+
+        <Button
+            android:id="@+id/button_august"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/august"
+            android:onClick="onMonthClick"
+            android:tag="august"/>
+
+        <Button
+            android:id="@+id/button_september"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/september"
+            android:onClick="onMonthClick"
+            android:tag="september"/>
+
+        <Button
+            android:id="@+id/button_october"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/october"
+            android:onClick="onMonthClick"
+            android:tag="october"/>
+
+        <Button
+            android:id="@+id/button_november"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/november"
+            android:onClick="onMonthClick"
+            android:tag="november"/>
+
+        <Button
+            android:id="@+id/button_december"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_columnWeight="1"
+            android:text="@string/december"
+            android:onClick="onMonthClick"
+            android:tag="december"/>
+    </GridLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationTitle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="@string/next_city_title"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/randomCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_city_text"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/showRandomCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_city_button"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
