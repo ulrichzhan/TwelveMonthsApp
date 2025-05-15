@@ -66,7 +66,6 @@ public class MonthDetailActivity extends AppCompatActivity implements OnMapReady
         String monthMetaData = getIntent().getStringExtra("month");
         int monthLabelId = MonthUtils.getMonthStringId(monthMetaData); // pour récupérer le bon mois traduite derrière
         month = getString(monthLabelId);
-        System.out.println(month);
         titleView.setText(getString(R.string.month_selected, month));
 
         // demande de permission pour la caméra
@@ -143,7 +142,7 @@ public class MonthDetailActivity extends AppCompatActivity implements OnMapReady
         }
     }
 
-//----------- GESTION DE LA SQL LITE -----------------------------------
+//----------- GESTION DE LA SQL LITE & Geocoder -----------------------------------
     @SuppressWarnings("MissingPermission")
     private void getLocationAndSave() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -168,6 +167,7 @@ public class MonthDetailActivity extends AppCompatActivity implements OnMapReady
         );
     }
 
+    // Utilisation du GEOCODER
     private void getAddressFromLocation(double lat, double lng) {
         Geocoder geocoder = new Geocoder(this, Locale.getDefault());
         try {
@@ -191,11 +191,11 @@ public class MonthDetailActivity extends AppCompatActivity implements OnMapReady
                 mainHandler.post(()-> {
                     map.clear(); // on nettoie les anciens marqueurs
                     map.addMarker(new MarkerOptions().position(defaultLocation).title("Default Location"));
-                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(defaultLocation, 10));
+                    map.moveCamera(CameraUpdateFactory.newLatLngZoom(defaultLocation, 15));
                 });
 
             } else {
-                // ⚠️ Mise à jour de l'interface avec le Handler si pas d'adresse
+                // Mise à jour de l'interface avec le Handler si pas d'adresse
                 mainHandler.post(() -> locationText.setText(getString(R.string.address_not_found)));
             }
         } catch (IOException e) {
